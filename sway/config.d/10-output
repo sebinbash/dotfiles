@@ -1,0 +1,4 @@
+### Output configuration
+
+# set the wallpaper
+output * bg $wallpaper fill

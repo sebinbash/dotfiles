@@ -1,0 +1,6 @@
+### Input configuration
+
+# Set keyboard layout to German
+input * {
+	xkb_layout "de"
+}

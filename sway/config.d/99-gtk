@@ -1,0 +1,10 @@
+### GTK Settings
+
+set $gnome_schema org.gnome.desktop.interface
+
+# Set Nordic GTK Theme
+exec_always {
+	gsettings set $gnome-schema gtk-theme 'Nordic'
+	gsettings set $gnome-schema icons 'Nordic'
+}
+

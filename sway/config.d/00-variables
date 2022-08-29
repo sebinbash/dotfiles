@@ -1,0 +1,23 @@
+### Variables
+
+# Logo key
+set $mod Mod4
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+# Your preferred terminal emulator
+set $term alacritty
+
+# Your preferred application launcher
+set $menu wofi --show=drun --lines=5 --prompt=""
+
+# Wallpaper and lockscreen
+set $wallpaper ~/Pictures/Wallpapers/wp.jpg
+set $lockscreen ~/Pictures/Wallpapers/ls.jpg
+
+# Preferred locker
+set $lock swaylock -f -i $lockscreen -s fill

@@ -1,0 +1,11 @@
+# My config for sway
+# 
+# Read 'man 5 sway' for a complete reference.
+
+# disable X11 support
+#xwayland disable
+
+# include all subfolders
+include ${XDG_BASE_DIR:=~/.config}/sway/config.d/*
+include /etc/sway/condig.d/*
+

@@ -1,0 +1,4 @@
+alias vim="nvim"
+alias ls="ls --color=auto"
+alias ll="ls --color=auto -al "
+alias dotconfig="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME/.config/"

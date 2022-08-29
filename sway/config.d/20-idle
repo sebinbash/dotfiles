@@ -1,0 +1,13 @@
+### Idle configuration
+
+exec swayidle -w \
+	timeout 60 $lock \
+	timeout 600 'swaymsg "output * dpms off"' \
+	resume 'swaymsg "output * dpms on"' \
+	before-sleep 'swaylock -C ~/.config/swaylock/swaylock.conf' \
+	lock 'swaylock -C ~/.config/swaylock/swaylock.conf'
+
+# Lock screen after 60 seconds
+# Turn off screen after 600 seconds
+# Turn back on when resumed
+# Lock screen before sleep and on lid cose

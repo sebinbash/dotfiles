@@ -1,0 +1,7 @@
+### Status bar
+
+# Use waybar
+# config in: ~/.config/waybar
+bar {
+	swaybar_command waybar
+}
