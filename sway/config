@@ -6,6 +6,7 @@
 #xwayland disable
 
 # include all subfolders
+
 include ${XDG_BASE_DIR:=~/.config}/sway/config.d/*
 include /etc/sway/condig.d/*
 

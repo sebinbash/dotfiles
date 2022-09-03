@@ -13,11 +13,11 @@ set $right l
 set $term alacritty
 
 # Your preferred application launcher
-set $menu wofi --show=drun --lines=5 --prompt=""
+set $menu rofi -show drun
 
 # Wallpaper and lockscreen
 set $wallpaper ~/Pictures/Wallpapers/wp.jpg
 set $lockscreen ~/Pictures/Wallpapers/ls.jpg
 
 # Preferred locker
-set $lock swaylock -f -i $lockscreen -s fill
+set $lock 'swaylock -C $HOME/.config/swayidle/swayidle.conf'

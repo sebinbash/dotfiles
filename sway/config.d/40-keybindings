@@ -156,7 +156,7 @@ mode "system" {
     bindsym s exec swaymsg "mode 'default', exec 'systemctl suspend'"
 
     # session lock / logout
-    bindsym l exec swaymsg "mode 'default', exec 'swaylock -C ~/.config/swaylock/swaylock.conf'"
+    bindsym l exec swaymsg "mode 'default', exec 'loginctl lock-session'"
 
     # Reload the configuration file
     bindsym c exec swaymsg "mode 'default', reload"
@@ -174,7 +174,12 @@ bindsym $mod+s mode "system"
 bindsym XF86MonBrightnessDown exec xbacklight -dec 2
 bindsym XF86MonBrightnessUp exec xbacklight -inc 2
 
-# Volume keys
-bindsym XF86AudioLowerVolume exec pamixer -d 2
-bindsym XF86AudioRaiseVolume exec pamixer -i 2
+# Volume and Player keys
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2%
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume @DEFAULT_SINK@ +2%
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle 
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 

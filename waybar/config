@@ -7,7 +7,7 @@
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/spotify"],
     "modules-center": ["sway/window"],
-    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "custom/powermenu", "tray"],
     // Modules configuration
     // "sway/workspaces": {
     //     "disable-scroll": true,
@@ -161,6 +161,11 @@
 	"exec": "$HOME/.config/waybar/spotify.sh",
 	"interval": 5,
 	"exec-if": "pgrep spotify"
+    },
+    "custom/powermenu": {
+        "format": "",
+        "interval": "once",
+        "on-click": "rofi -show powermenu -modi powermenu:$HOME/.config/waybar/power-menu.sh --choices shutdown/reboot/suspend/hibernate/lockscreen",
     }
 }
 

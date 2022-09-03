@@ -1,0 +1,3 @@
+timeout 90 'swaylock -C ~/.config/swaylock/swaylock.conf' resume 'swaymsg "output * dpms on"' 
+timeout 180 'systemctl suspend' resume 'swaymsg "output * dpms on"' 
+lock 'swaylock -C ~/.config/swaylock/swaylock.conf'
