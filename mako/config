@@ -1,0 +1,12 @@
+max-history=3
+sort=-time
+font=Roboto Mono Nerd Font 10
+background-color=#282A36FF
+text-color=#F8F8F2FF
+border-color=#44475AFF
+
+[app-name="blueman"]
+default-timeout=5000
+
+[app-name="NetworkManager Applet"]
+default-timeout=5000
