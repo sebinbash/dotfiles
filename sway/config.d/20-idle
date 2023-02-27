@@ -8,6 +8,10 @@ exec swayidle -w
 #	before-sleep '$lock' \
 #	lock '$lock'
 
+for_window [class="Chromium"] inhibit_idle fullscreen
+for_window [class="MuPDF"] inhibit_idle fullscreen
+for_window [class="Spotify"] inhibit_idle fullscreen
+
 # Lock screen after 60 seconds
 # Turn off screen after 120 seconds
 # Suspend after 240 seconds

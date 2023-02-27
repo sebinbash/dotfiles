@@ -5,3 +5,8 @@
 bar {
 	swaybar_command waybar
 }
+
+exec_always nm-applet --indicator
+exec_always dbus-update-activation-environment DISPLAY
+exec_always blueman-applet
+

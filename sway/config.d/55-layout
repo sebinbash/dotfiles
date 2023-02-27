@@ -3,3 +3,5 @@
 # gaps inner 10
 default_border pixel 0
 
+## Floating windows
+for_window [app_id="nm-connection-editor"] floating enable

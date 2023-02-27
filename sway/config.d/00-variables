@@ -16,7 +16,8 @@ set $term alacritty
 set $menu rofi -show drun
 
 # Wallpaper and lockscreen
-set $wallpaper ~/Pictures/Wallpapers/wp.jpg
+#set $wallpaper ~/Pictures/Wallpapers/wp.jpg
+set $wallpaper ~/Pictures/Wallpapers/shuffle/$(ls ~/Pictures/Wallpapers/shuffle/ | shuf -n 1)
 set $lockscreen ~/Pictures/Wallpapers/ls.jpg
 
 # Preferred locker
