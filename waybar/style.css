@@ -77,6 +77,7 @@ window#waybar.chromium {
 #pulseaudio,
 #custom-media,
 #custom-spotify,
+#custom-powermenu,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -196,7 +197,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    /* background-color: #2980b9; */
 }
 
 #tray > .passive {
